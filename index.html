@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple UI Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      background-color: #0077cc;
+      padding: 1rem 2rem;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+
+    nav ul li:hover {
+      opacity: 0.7;
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .card {
+  background-image: url('images/mypic.jpg');
+  background-size: cover;   /* Ảnh phủ hết khung */
+  background-position: center; /* Canh giữa ảnh */
+  color: white; /* Chữ màu trắng để nổi trên ảnh */
+      background-color: rgba(189, 245, 98, 0.8); /* Nền trắng mờ */
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .card h2 {
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 2rem;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>MySite</h1>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h2>Welcome to My Simple Website</h2>
+        <img src="pic_trulli.jpg" alt="Trulli" width="500" height="333">
+      <p>This is a basic UI built with just HTML and CSS. You can customize it to fit your needs!</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 MySite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
